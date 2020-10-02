@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym.jpg');
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="img/silhouette-3276824_640.png" alt="">
+            <div>
+                Fitness Freak
+            </div>
+        </div>
+        <div class="center">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now!</h1>
+        <form action="noaction.php">
+            <label for="name">Name: </label> 
+            <div class="form-group">
+                <input type="text" name="" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                Email: <input type="email" name="myemail" placeholder="Enter Your Email">
+            </div>
+            <label for="Gender">Gender:</label>
+            <div> 
+                Male <input type="radio" name="mygender" id="Gender"> Female  <input type="radio" name="mygender" id="Gender"> Other  <input type="radio" name="mygender" id="Gender">
+            </div>
+            <div>
+                <label for ="Date"><strong>Date of Birth:</strong></label>
+                <select id="Date" name="Month">
+                    <option value="Month">Month</option>
+                    <option value ="January">Jan</option>
+                    <option value="February">Feb</option>
+                    <option value="March">Mar</option>
+                    <option value="April">Apr</option>
+                    <option value="May">May</option>
+                </select>
+        
+                <select id="Date" name="Date">
+                    <option value="Date">Date</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+        
+                <select id="Date" name="Year">
+                    <option value="year">Year</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                </select>
+            </div>  
+            <div class="form-group">
+                Age: <input type="number" name="mynumber" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                Phone Number: <input type="text" name="phone" placeholder="Enter your Age">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
